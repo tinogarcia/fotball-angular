@@ -1,0 +1,38 @@
+<nav class="flex items-center justify-between flex-wrap bg-white py-4 lg:px-12 shadow border-solid border-t-2 border-green-700">
+    <div class="flex justify-between lg:w-auto w-full lg:border-b-0 pl-6 pr-2 border-solid border-b-2 border-gray-300 pb-5 lg:pb-0">
+        <div class="flex items-center flex-shrink-0 text-gray-800 mr-16">
+            <a [routerLink]="['/']" class="font-semibold text-xl tracking-tight">#WikiFotball</a>
+        </div>
+        <div class="block lg:hidden ">
+            <button
+                id="nav"
+                class="flex items-center px-3 py-2 border-2 rounded text-green-700 border-green-700 hover:text-blue-700 hover:border-green-700">
+                <svg class="fill-current h-3 w-3" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>Menu</title>
+                    <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"/>
+                </svg>
+            </button>
+        </div>
+    </div>
+    
+    <div class="menu w-full lg:block flex-grow lg:flex lg:items-center lg:w-auto lg:px-3 px-8">
+        <div class="text-md font-bold text-green-700 lg:flex-grow">
+            <a [routerLink]="['/equipos']"
+                class="block mt-4 lg:inline-block lg:mt-0 hover:text-white px-4 py-2 rounded hover:bg-green-700 mr-2">
+                Equipos
+            </a>
+            <a [routerLink]="['/jugadores']"
+                class=" block mt-4 lg:inline-block lg:mt-0 hover:text-white px-4 py-2 rounded hover:bg-green-700 mr-2">
+                Jugadores
+            </a>
+        </div>
+
+    </div>
+</nav>
+<div class="w-full bg-center bg-cover h-screen" style="background-image: url(https://images.unsplash.com/photo-1508098682722-e99c43a406b2?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80);">
+    <div class="flex items-center justify-center w-full h-full bg-gray-900 bg-opacity-50">
+        <div class="text-center">
+            <h1 class="text-2xl font-semibold text-white uppercase lg:text-3xl">Toda la información sobre <span class="text-green-400 underline">LaLiga</span> a tu mano!</h1>
+            <!-- <button class="w-full px-4 py-2 mt-4 text-sm font-medium text-white uppercase transition-colors duration-200 transform bg-blue-600 rounded-md lg:w-auto hover:bg-blue-500 focus:outline-none focus:bg-blue-500">Start project</button> -->
+        </div>
+    </div>
+</div>
